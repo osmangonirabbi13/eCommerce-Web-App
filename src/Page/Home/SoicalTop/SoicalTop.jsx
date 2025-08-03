@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 const SoicalTop = () => {
   return (
-    <div className="flex justify-around text-sm py-1">
+    <div className="lg:flex justify-around text-sm py-1 hidden md:hidden">
       <div className="dropdown dropdown-bottom">
         <div tabIndex={0} role="" className="flex items-center gap-2 m-1 ">
           <span className="flex items-center gap-2 m-1 font-medium">
