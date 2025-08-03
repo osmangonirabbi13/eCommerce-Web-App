@@ -4,6 +4,7 @@ import FashionHome from "../Hero/FashionHome";
 import Freeship from "../Freeship/Freeship";
 import FashionBanner from "../FashionBanner/FashionBanner";
 import BestSellerProducts from "../BestSellerProduct/BestSellerProducts";
+import Reviews from "../Reviews/Reviews";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Freeship />
       <FashionBanner />
       <BestSellerProducts />
+      <Reviews />
     </>
   );
 };

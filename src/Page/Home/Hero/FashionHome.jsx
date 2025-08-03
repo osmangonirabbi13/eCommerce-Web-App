@@ -5,6 +5,52 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { IoMdArrowDropdown } from "react-icons/io";
 
+const PrevArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...arrowStyle,
+        left: "-20px",
+      }}
+      onClick={onClick}
+    ></div>
+  );
+};
+
+// Right Arrow Component
+const NextArrow = (props) => {
+  const { className, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...arrowStyle,
+        right: "-20px",
+      }}
+      onClick={onClick}
+    ></div>
+  );
+};
+
+const arrowStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  background: "rgba(0,0,0,0.5)",
+  color: "white",
+  fontSize: "20px",
+  width: "40px",
+  height: "40px",
+  borderRadius: "50%",
+  position: "absolute",
+  top: "50%",
+  transform: "translateY(-50%)",
+  zIndex: 10,
+  cursor: "pointer",
+};
+
 const categories = [
   { name: "Men", link: "/men" },
   { name: "Women", link: "/women" },
@@ -46,14 +92,15 @@ export default function FashionHome() {
   const [open, setOpen] = useState(true);
 
   const settings = {
-    dots: true,
     infinite: true,
     autoplay: true,
     speed: 800,
-    autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false,
+    autoplaySpeed: 4000,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
   };
 
   return (
