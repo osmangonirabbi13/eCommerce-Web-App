@@ -12,7 +12,9 @@ const MainLayouts = () => {
       <hr className="bg-gray-300 border-0.5 border-gray-300" />
       <Topmenu />
       <hr className="bg-gray-300 border-0.5 border-gray-300" />
-      <Outlet />
+      <div className="min-h-[calc(100vh-108px)]">
+        <Outlet />
+      </div>
       <h2>gggg</h2>
     </div>
   );

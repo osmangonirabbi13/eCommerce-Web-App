@@ -29,14 +29,21 @@ const slides = [
     subheading: "Winter 2022 Collection",
   },
   {
-    image: "https://i.ibb.co/6RxN2mND/slider-01.jpg",
+    image:
+      "https://klbtheme.com/clotya/wp-content/uploads/2022/04/slider-03.jpg",
+    heading: "Urban Style for Every Season",
+    subheading: "New Trends Available",
+  },
+  {
+    image:
+      "https://klbtheme.com/clotya/wp-content/uploads/2022/04/slider-02.jpg",
     heading: "Urban Style for Every Season",
     subheading: "New Trends Available",
   },
 ];
 
 export default function FashionHome() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const settings = {
     dots: true,
