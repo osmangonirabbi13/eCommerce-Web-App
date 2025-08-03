@@ -1,10 +1,12 @@
 import React from "react";
 
+import FashionHome from "../Hero/FashionHome";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Home Tab ggggggggggggggggggggggggg </h1>
-    </div>
+    <>
+      <FashionHome />
+    </>
   );
 };
 
