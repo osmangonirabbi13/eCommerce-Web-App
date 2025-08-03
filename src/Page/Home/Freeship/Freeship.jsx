@@ -10,7 +10,7 @@ const Freeship = () => {
         {/* div 1 */}
         <div className="flex gap-4 items-center ">
           <div>
-            <FaShippingFast size={50} color="white" />
+            <FaShippingFast size={50} />
           </div>
           <div className="">
             <h1 className="font-bold text-lg">Free Shipping</h1>
