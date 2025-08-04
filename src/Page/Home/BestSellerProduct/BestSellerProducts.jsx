@@ -102,7 +102,7 @@ const BestSellerProducts = () => {
         {/* Card 1 */}
         <div className="px-3">
           <Link
-            to="/product/123"
+            to="product/1"
             className="block group bg-white shadow overflow-hidden"
           >
             {/* Image wrapper */}
