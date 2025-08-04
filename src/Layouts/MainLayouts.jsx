@@ -3,6 +3,7 @@ import { Outlet } from "react-router";
 import TopOffer from "../Page/Home/TopOffer/TopOffer";
 import SoicalTop from "../Page/Home/SoicalTop/SoicalTop";
 import Topmenu from "../Page/Home/Topmenu/Topmenu";
+import Footer from "../Page/Shared/Footer/Footer";
 
 const MainLayouts = () => {
   return (
@@ -15,7 +16,7 @@ const MainLayouts = () => {
       <div className="min-h-[calc(100vh-108px)]">
         <Outlet />
       </div>
-      <h2>gggg</h2>
+      <Footer />
     </div>
   );
 };
