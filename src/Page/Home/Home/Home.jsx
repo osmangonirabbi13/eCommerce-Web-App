@@ -7,6 +7,7 @@ import Reviews from "../Reviews/Reviews";
 import TeamLogo from "../TeamLogo/TeamLogo";
 import DiscountBanner from "../DiscountBanner/DiscountBanner";
 import Blog from "../Blog/Blog";
+import NewsLatter from "../NewsLatter/NewsLatter";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <hr className="bg-gray-300 border-0.5 border-gray-300 max-w-7xl mx-auto " />
       <DiscountBanner />
       <Blog />
+      <NewsLatter />
     </>
   );
 };
