@@ -2,7 +2,7 @@ import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const App = () => {
+const DiscountBanner = () => {
   const handleCopy = () => {
     navigator.clipboard.writeText("FREE15FIRST");
     toast.success("Discount code copied!", {
@@ -33,4 +33,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default DiscountBanner;
