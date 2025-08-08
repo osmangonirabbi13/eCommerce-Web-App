@@ -7,6 +7,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import Sidebar from "./Sidebar";
+import { Link } from "react-router";
 
 const Topmenu = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -37,7 +38,10 @@ const Topmenu = () => {
 
         {/* Right Icons */}
         <div className="flex items-center gap-4 text-black">
-          <FaUser className="text-xl cursor-pointer" />
+          <Link to="/login">
+            {" "}
+            <FaUser className="text-xl cursor-pointer" />
+          </Link>
           <div className="relative cursor-pointer hidden sm:block">
             {" "}
             {/* hide on very small */}
